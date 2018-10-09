@@ -2,7 +2,6 @@
   "name": "crud",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://lettamartin.github.io/React-crud",
   "dependencies": {
     "bootstrap": "^3.3.7",
     "create-react-class": "^15.6.3",
@@ -14,7 +13,8 @@
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
     "react-scripts": "2.0.4",
-    "reactstrap": "^6.5.0"
+    "reactstrap": "^6.5.0",
+    "webpack": "^4.19.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -23,7 +23,6 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
-
   },
   "eslintConfig": {
     "extends": "react-app"
