@@ -49,7 +49,7 @@ class Form extends Component {
   handleSubmit(e) {
     e.preventDefault();
     let userData = this.state.data;
-    fetch('https://v10dev.yeira.training/api/v1/users?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaXNzIjoiaHR0cHM6Ly92MTBkZXYueWVpcmEudHJhaW5pbmcvYXBpL3YxL2F1dGhlbnRpY2F0ZSIsImlhdCI6MTUzOTEwMTc2NSwiZXhwIjoxNTM5MTA1MzY1LCJuYmYiOjE1MzkxMDE3NjUsImp0aSI6Im1mUnliZG5jTGlXc3p1VG8ifQ.W6O59rs53sfPSql-8t2aSrjypwzkMiCg4Pra3ZKpG_c', {
+    fetch('https://v10dev.yeira.training/api/v1/users?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaXNzIjoiaHR0cHM6Ly92MTBkZXYueWVpcmEudHJhaW5pbmcvYXBpL3YxL2F1dGhlbnRpY2F0ZSIsImlhdCI6MTUzOTEwMjE1NSwiZXhwIjoxNTM5MTA1NzU1LCJuYmYiOjE1MzkxMDIxNTUsImp0aSI6IkRWQ0ZmOXZWbWZqeDZzZlEifQ.Vc59hHd7sQwJ8lATbjhNiSitlqWGI0gGMi8vYSE0eSA', {
       method: "POST",
       body: JSON.stringify(userData),
       headers: {
@@ -138,7 +138,7 @@ class Form extends Component {
                                 <div className="col-sm-4"></div>
                                 <div className="col-sm-5 btn-ret">
                                   <Link to="/List" className="return">
-                                  <button type="button" class="btn btn-secondary">View List</button>
+                                  <button type="button" className="btn btn-secondary">View List</button>
                                   </Link>
                               </div>
 
@@ -146,14 +146,14 @@ class Form extends Component {
 
 
                     </form>
-                    <div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLabel">New user successfully added</h5>
+                    <div className="modal fade" id="Modal" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div className="modal-dialog" role="document">
+                      <div className="modal-content">
+                        <div className="modal-header">
+                          <h5 className="modal-title" id="exampleModalLabel">New user successfully added</h5>
                         </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Ok</button>
+                        <div className="modal-footer">
+                          <button type="button" className="btn btn-secondary" data-dismiss="modal">Ok</button>
                         </div>
                       </div>
                     </div>

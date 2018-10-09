@@ -13,7 +13,7 @@ class List extends Component {
   }
 
   componentDidMount() {
-    fetch('https://v10dev.yeira.training/api/v1/users?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaXNzIjoiaHR0cHM6Ly92MTBkZXYueWVpcmEudHJhaW5pbmcvYXBpL3YxL2F1dGhlbnRpY2F0ZSIsImlhdCI6MTUzOTEwMTc2NSwiZXhwIjoxNTM5MTA1MzY1LCJuYmYiOjE1MzkxMDE3NjUsImp0aSI6Im1mUnliZG5jTGlXc3p1VG8ifQ.W6O59rs53sfPSql-8t2aSrjypwzkMiCg4Pra3ZKpG_cs')
+    fetch('https://v10dev.yeira.training/api/v1/users?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaXNzIjoiaHR0cHM6Ly92MTBkZXYueWVpcmEudHJhaW5pbmcvYXBpL3YxL2F1dGhlbnRpY2F0ZSIsImlhdCI6MTUzOTEwMjE1NSwiZXhwIjoxNTM5MTA1NzU1LCJuYmYiOjE1MzkxMDIxNTUsImp0aSI6IkRWQ0ZmOXZWbWZqeDZzZlEifQ.Vc59hHd7sQwJ8lATbjhNiSitlqWGI0gGMi8vYSE0eSA')
     .then(response => {return response.json();})
     .then(users => {this.setState({ users: users.data })});
   }
