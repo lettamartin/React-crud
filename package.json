@@ -2,6 +2,7 @@
   "name": "crud",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://lettamartin.github.io/React-crud",
   "dependencies": {
     "bootstrap": "^3.3.7",
     "create-react-class": "^15.6.3",
